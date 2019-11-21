@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>Menu - Janggo Coffee Shop </title>
+        <link href = "menu.css" type ="text/css" rel = "stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       
+       <div class = "header"> 
+        <header>
+            <h1 id = "name"> Janggo Coffee Shop </h1>
+
+        </header>
+    </div>
+<div class = "box1">
+    <div class = "navigation">
+        <p><a href = "assignment.html" rel = "homepage"> Home </a></p>
+        <p><a href = "menu.html" rel = "menupage"> Menu </a></p>
+        <p><a href = "music.html" rel = "musicpage"> Music </a></p>
+        <p><a href = "about.html" rel = "aboutpage"> About </a></p>
+        <p><a href = "register.html" rel = "registerpage"> Register</a></p>
+    </div>
+
+    <div class = "content">
+            <div id="pic">
+                    <img id = "cup" src = "coffee.jpg" alt = "coffeecup" />
+                    <div id ="greet">
+                    <p id="daytime"></p>
+                    <button id ="disc" onclick = "orderFunction()">Do you want some discount?</button>
+                    <p id="lottery"></p>
+                    <div id="inputtext">
+                    <label text-align="center"> Enter any number from 1-10: </label><br>
+                    <input type="text" name="num" id="n1">
+                    <button id="play" onclick="playfunction()">Play</button>
+                    <p id="hint">I will give you hints along the way</p>
+                </div>
+            </div></div>
+        <table>
+        <caption>Janngo Coffee Shop Menu</caption>
+       
+    <tr>
+       <td > What's is brewing</td>
+       <td class="pricenum"> Price</td>
+       <td class="btns">Order</td>
+       <td > What is baking</td>
+       <td class="pricenum"> Price</td>
+       <td  class="btns">Order</td>
+    </tr>
+    <tr>
+            <td> Americano</td>
+            <td class="pricenum"> $3.00</td>
+            <td  class="btns">
+            <input  class="add" id ="americano" type="image" src="cart.png" width="95%" onclick="add()">
+            </td>
+            <td> Cake of the day</td>
+            <td class="pricenum"> $8.00</td>
+            <td  class="btns">
+            <input id ="cake"  class="add" type="image" src="cart.png" width="95%" onclick="add()">
+            </td>
+    </tr>
+    <tr>
+            <td> Latte</td>
+            <td class="pricenum"> $4.00</td>
+            <td  class="btns">
+            <input id ="latte" class="add" type="image" src="cart.png" width="95%" onclick="add()">
+            </td>
+            <td> Cupcakes</td>
+            <td class="pricenum"> $5.00</td>
+            <td>
+            <input id ="cupcakes"  class="add" type="image" src="cart.png" width="95%" onclick="add()">
+            </td>
+    </tr>
+    <tr>
+            <td> Cappuccino</td>
+            <td class="pricenum"> $4.00</td>
+            <td>
+            <input  class="add" id ="cappuccino" type="image" src="cart.png" width="95%" onclick="add()">
+            </td>
+            <td> Croissants</td>
+            <td class="pricenum"> $3.00</td>
+            <td>
+            <input  class="add" id ="croissants" type="image" src="cart.png" width="95%" onclick="add()">
+            </td>
+    </tr>
+    <tr>
+        <td> Iced Coffee</td>
+        <td class="pricenum"> $4.00</td>
+        <td>
+        <input  class="add" id ="icoffee" type="image" src="cart.png" width="95%" onclick="add()">
+        </td>
+        <td> Garlic Bread</td>
+        <td class="pricenum"> $4.00</td>
+        <td>
+        <input  class="add" id ="garlic" type="image" src="cart.png" width="95%" onclick="add()">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="downbtn" id="modalbtn" >Open Cart</button>
+            <div id="simplemodal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="closebtn">&times;</span>
+                    <h2>Your order</h2>
+                </div>
+                <div class="modal-body">
+                <table id ="ordertable">
+                    <tr>
+                        <td>Item</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                    </tr>
+                </table>
+                <p id="totaltext"></p>
+                </div>
+                <div class="modal-footer">
+                    <h3> Thank you for your order. Sounds tasty!</h3>
+                </div>
+            </div> 
+            </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td> 
+        <button class="downbtn" id="clear"> Clear Cart</button>
+        </td>
+    </tr>
+        </table>
+    </div>
+</div>
+        <div class = "footer">
+        <footer>
+            &copy; JanggoCoffee. All rights reserved 2018
+        </footer>
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+    <script type="text/javascript" src="javas.js"></script>
+    
+    </body>
+</html>
