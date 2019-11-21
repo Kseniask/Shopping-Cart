@@ -61,7 +61,7 @@ a:hover {
     margin: 40px;
     padding:10px;
     border:10px solid;
-    border-image: url("./images/frame.jpg") 150 stretch;
+    border-image: url("../images/frame.jpg") 150 stretch;
     width:230px;
     
     float:right;
@@ -130,7 +130,7 @@ line-height: 2.6em;
 }
 caption {
     text-align: center;
-    background-image: url("./images/cuppic.jpg");
+    background-image: url("../images/cuppic.jpg");
     color:beige;
 }
 td {
